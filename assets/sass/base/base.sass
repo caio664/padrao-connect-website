@@ -1,5 +1,83 @@
 @use '../abstracts/abstracts'
 
+*
+    margin: 0
+    padding: 0
+    border: none
+    list-style: none
+    -webkit-box-sizing: border-box
+    -moz-box-sizing: border-box
+    box-sizing: border-box
+
 html 
     font-size: 16px
+
+body
+    position: relative
+    display: block
+    font-size: 1rem
+    font-family: abstracts.$text-font
+    color: abstracts.$text-primary-color
     background-color: abstracts.$background-primary-color
+
+h1, h2, h3, h4, h5, h6
+    position: relative
+    display: block
+
+h1, h2
+    font-size: 2.5rem 
+    font-family: abstracts.$title-font
+
+p, a
+    position: relative
+    font-size: 1rem
+    color: abstracts.$text-primary-color
+
+p
+    display: block
+    width: 100%
+    line-height: 1.4
+
+a
+    display: inline-block
+    text-decoration: none
+
+img
+    position: relative
+    display: block
+    width: auto
+    height: auto
+
+header, main, footer, section, article, aside, nav, picture, figure, div
+    position: relative
+    display: block
+
+header, main, footer, section, article, picture, figure, figcaption
+    width: 100%
+    height: auto
+
+picture, figure
+    line-height: 0
+    img
+        width: 100%
+    
+form
+    position: relative
+    display: flex 
+    width: 100%
+    gap: 0.5rem
+    flex: 1 1 auto
+    align-items: center
+    flex-direction: column
+    justify-content: flex-start
+    input, textarea, select 
+        position: relative
+        display: block
+        font-size: 1rem
+        line-height: 1.4
+
+input[type="submit"], button
+    position: relative
+    display: block
+    font-size: 1rem
+    cursor: pointer 
