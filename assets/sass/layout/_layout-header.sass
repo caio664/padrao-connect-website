@@ -4,19 +4,27 @@
         align-items: center
         flex-direction: row
         justify-content: space-between
-        .social-media, .auth-buttons
+        .wrapper-buttons
             position: relative
             display: flex 
-            gap: 1rem
+            gap: 3.5rem
             flex-wrap: wrap 
-            flex-direction: row 
             align-items: center
-            justify-content: center 
+            flex-direction: row 
+            justify-content: center
+            .social-media, .auth-buttons
+                position: relative
+                display: flex 
+                gap: 1rem
+                flex-wrap: wrap 
+                flex-direction: row 
+                align-items: center
+                justify-content: center 
             
         .menu
             &-nav
                 &-list
-                    gap: 2.5rem
+                    gap: 2rem
                     flex-wrap: wrap
                     align-items: center
                     flex-direction: row

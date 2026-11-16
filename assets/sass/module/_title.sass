@@ -1,0 +1,12 @@
+@use '../abstracts/abstracts'
+@use 'sass:color'
+
+.l-title
+    span 
+        font-size: 1rem
+        font-weight: bold
+        border-radius: 50rem 
+        padding: 0.3rem 1rem 
+        color: abstracts.$secondary-color
+        border: abstracts.$secondary-color 2px solid
+        background-color: rgba(color.adjust( abstracts.$secondary-color, $lightness: 15% ), 0.1)

@@ -1,0 +1,50 @@
+@use '../abstracts/abstracts'
+@use 'sass:color'
+
+.about
+    .l-container
+        &-image
+            >img
+                position: absolute
+                z-index: 1
+                top: 2rem 
+                left: 65%
+                width: 40%
+                -webkit-transform: translate(-50%, 0%)
+                -moz-transform: translate(-50%, 0%)
+                transform: translate(-50%, 0%)
+            
+            picture
+                z-index: 0
+        
+        &-description
+            ul
+                margin: 1.5rem 0rem
+                flex-direction: row 
+                align-items: stretch  
+                justify-content: space-between
+                li
+                    display: flex 
+                    width: 31%
+                    gap: 0.8rem
+                    padding: 1rem
+                    flex-wrap: wrap
+                    align-items: start
+                    border-radius: 1rem 
+                    flex-direction: column 
+                    justify-content: start 
+                    box-shadow: 2px 3px 15px 2px rgba( abstracts.$secondary-color, 0.3 )
+                    background-color: abstracts.$background-primary-color
+                    .icon
+                        width: 3rem
+                        height: 3rem 
+                    
+                    h3
+                        font-size: 1.1rem
+
+    .bg
+        position: absolute
+        z-index: -1
+        left: 0rem 
+        top: -15rem 
+        opacity: 0.7
