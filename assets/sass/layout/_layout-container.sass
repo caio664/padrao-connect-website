@@ -1,0 +1,41 @@
+.l-container 
+    display: flex
+    width: 80%
+    margin: 0 auto
+    align-items: center
+    justify-content: start 
+    flex-direction: column
+    &-description, 
+    &-image,
+    &-title, 
+    &-buttons
+        display: flex 
+        width: 100% 
+        height: auto
+        align-items: start
+        flex-direction: column
+        justify-content: start
+
+    &-hero
+        flex-wrap: wrap
+        align-items: stretch 
+        flex-direction: row
+        justify-content: space-between 
+        .l-container-description, 
+        .l-container-image
+            width: 48%
+            align-items: start 
+            justify-content: center
+
+        .l-container-description
+            gap: 2rem 
+            .l-container-title
+                gap: 1.5rem
+
+            .l-container-buttons
+                gap: 1.5rem
+                flex-wrap: wrap
+                padding-top: 2rem
+                align-items: center
+                flex-direction: row 
+                justify-content: start  

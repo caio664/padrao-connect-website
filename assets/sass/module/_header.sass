@@ -1,0 +1,80 @@
+@use '../abstracts/abstracts'
+@use 'utility'
+
+.header 
+    .l-container
+        .social-media 
+            a
+                width: 2rem
+                height: 2rem 
+                border-radius: 50rem
+                background-color: abstracts.$secondary-color
+                .icon
+                    img
+                        position: absolute
+                        top: 50%
+                        left: 50%
+                        width: 60%
+                        -webkit-transform: translate(-50%, -50%)
+                        -moz-transform: translate(-50%, -50%)
+                        transform: translate(-50%, -50%)
+                
+                .icon-instagram
+                    img
+                        width: 70%
+
+        .menu
+            &-nav
+                &-list
+                    .item 
+                        a
+                            font-weight: 500
+                            font-size: 1.1rem
+                            +utility.transition
+                            &:before
+                                position: absolute
+                                display: block
+                                content: '' 
+                                left: 50%
+                                width: 0%
+                                height: 3px
+                                bottom: -5px
+                                background-color: abstracts.$primary-color
+                                -webkit-transform: translate(-50%, 0%)
+                                -moz-transform: translate(-50%, 0%)
+                                transform: translate(-50%, 0%)
+                                +utility.transition 
+                            
+                            &:hover 
+                                color: abstracts.$primary-color
+                                &:before
+                                    width: 100%
+
+    .bg 
+        position: absolute
+        z-index: -1
+        top: 0rem 
+        right: 0rem
+        width: 100%
+        height: 100vh
+        overflow: hidden
+        &::before, &::after
+            position: absolute
+            content: ''
+            border-radius: 100rem 
+
+        &::before
+            top: -40rem 
+            left: -40rem 
+            width: 80rem
+            height: 80rem 
+            background-image: radial-gradient(circle, rgba(abstracts.$primary-color-light, 0.4), transparent, transparent)
+
+        &::after
+            top: -40rem 
+            width: 100rem 
+            right: -50rem
+            height: 100rem 
+            background-image: radial-gradient(circle, rgba(abstracts.$secondary-color, 0.2), transparent, transparent)
+
+       
