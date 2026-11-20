@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg"
+     width="1920" height="146"
+     viewBox="0 0 1025 78"
+     preserveAspectRatio="none"
+     role="img" aria-label="Recorte ondulado branco com parte superior transparente">
+  <!--
+    Recorte inspirado na referência original, redesenhado com curvas
+    cúbicas de Bézier C2-contínuas (sem segmentos retos no contorno).
+    Todo o espaço acima do traçado permanece 100% transparente.
+    Para redimensionar, utilize width:100%; height:auto no CSS.
+  -->
+  <path
+    d="M 0 49.465
+    C 63.333 31.56, 126.667 24.045, 190 23.089
+    C 240 22.334, 290 25.667, 340 32.574
+    C 396.667 40.401, 453.333 52.819, 510 60.904
+    C 570 69.465, 630 73.167, 690 71.964
+    C 750 70.761, 810 64.651, 870 53.534
+    C 921.667 43.961, 973.333 30.674, 1025 13.247
+    L 1025 78 H 0 Z"
+    fill="#FFFFFF" />
+</svg>

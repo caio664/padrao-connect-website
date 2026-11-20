@@ -1,9 +1,32 @@
-.l-header
+@use "../abstracts/variables"
+@use "../abstracts/utilities"
+
+.layout-header
     padding: 1rem 0rem
-    .l-container 
+    .layout-container 
         align-items: center
         flex-direction: row
         justify-content: space-between
+        .social-media 
+            a
+                .icon
+                    width: 2rem
+                    height: 2rem 
+                    border-radius: 50rem
+                    background-color: variables.$purple
+                    img
+                        position: absolute
+                        top: 50%
+                        left: 50%
+                        width: 60%
+                        -webkit-transform: translate(-50%, -50%)
+                        -moz-transform: translate(-50%, -50%)
+                        transform: translate(-50%, -50%)
+                
+                .icon-instagram
+                    img
+                        width: 70%
+
         .wrapper-buttons
             position: relative
             display: flex 
@@ -28,4 +51,52 @@
                     flex-wrap: wrap
                     align-items: center
                     flex-direction: row
-        
+                    .item 
+                        a
+                            font-weight: 500
+                            font-size: 1.1rem
+                            +utilities.transition
+                            &:before
+                                position: absolute
+                                display: block
+                                content: '' 
+                                left: 50%
+                                width: 0%
+                                height: 3px
+                                bottom: -5px
+                                background-color: variables.$green
+                                -webkit-transform: translate(-50%, 0%)
+                                -moz-transform: translate(-50%, 0%)
+                                transform: translate(-50%, 0%)
+                                +utilities.transition 
+                            
+                            &:hover 
+                                color: variables.$green
+                                &:before
+                                    width: 100%
+    .bg 
+        position: absolute
+        z-index: -1
+        top: 0rem 
+        right: 0rem
+        width: 100%
+        height: 100vh
+        overflow: hidden
+        &::before, &::after
+            position: absolute
+            content: ''
+            border-radius: 100rem 
+
+        &::before
+            top: -40rem 
+            left: -40rem 
+            width: 80rem
+            height: 80rem 
+            background-image: radial-gradient( circle, rgba( variables.$light-green, 0.4 ), transparent, transparent )
+
+        &::after
+            top: -40rem 
+            width: 100rem 
+            right: -50rem
+            height: 100rem 
+            background-image: radial-gradient( circle, rgba( variables.$purple, 0.2 ), transparent, transparent )

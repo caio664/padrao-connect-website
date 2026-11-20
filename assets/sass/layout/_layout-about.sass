@@ -1,12 +1,28 @@
-.l-about 
-    padding: 4rem 0rem
-    .l-container  
+@use "../abstracts/variables"
+@use "sass:color"
+
+.layout-about 
+    padding: 4rem 0rem 8rem
+    .layout-container  
+        z-index: 2
         flex-wrap: wrap 
-        flex-direction: row 
         align-items: center
+        flex-direction: row 
         justify-content: space-between
         &-image 
             width: 53%
+            >img
+                position: absolute
+                z-index: 1
+                top: 2rem 
+                left: 65%
+                width: 40%
+                -webkit-transform: translate(-50%, 0%)
+                -moz-transform: translate(-50%, 0%)
+                transform: translate(-50%, 0%)
+            
+            picture
+                z-index: 0
 
         &-description
             gap: 1.5rem
@@ -14,3 +30,32 @@
             p
                 font-size: 1.1rem
                 max-width: 36rem
+            ul
+                margin: 1.5rem 0rem
+                flex-direction: row 
+                align-items: stretch  
+                justify-content: space-between
+                li
+                    display: flex 
+                    width: 31%
+                    gap: 0.8rem
+                    padding: 1rem
+                    flex-wrap: wrap
+                    align-items: start
+                    border-radius: 1rem 
+                    flex-direction: column 
+                    justify-content: start 
+                    background-color: variables.$white
+                    box-shadow: 2px 3px 15px 2px rgba( variables.$purple, 0.3 )
+                    .icon
+                        width: 3rem
+                        height: 3rem 
+                    
+                    h3
+                        font-size: 1.1rem
+    .bg
+        position: absolute
+        z-index: -1
+        left: 0rem 
+        top: -15rem 
+        opacity: 0.7

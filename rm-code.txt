@@ -1,0 +1,1 @@
+Get-ChildItem -Recurse -Force -File -Filter "*Zone.Identifier" | Remove-Item -Force

@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="650" viewBox="0 0 1920 650" fill="none">
+  <defs>
+    <linearGradient id="lavenderFadeA" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#E7C8FF" stop-opacity="0.18"/>
+      <stop offset="100%" stop-color="#D9B7FF" stop-opacity="0.04"/>
+    </linearGradient>
+    <linearGradient id="lavenderFadeB" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#F0D7FF" stop-opacity="0.14"/>
+      <stop offset="100%" stop-color="#F8E8FF" stop-opacity="0.03"/>
+    </linearGradient>
+    <linearGradient id="lavenderFadeC" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#E3C2FF" stop-opacity="0.08"/>
+      <stop offset="100%" stop-color="#F7E9FF" stop-opacity="0.0"/>
+    </linearGradient>
+    <linearGradient id="lavenderFadeD" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#F8E9FF" stop-opacity="0.0"/>
+      <stop offset="100%" stop-color="#F1D5FF" stop-opacity="0.18"/>
+    </linearGradient>
+    <filter id="blur24" x="-10%" y="-10%" width="120%" height="120%">
+      <feGaussianBlur stdDeviation="24"/>
+    </filter>
+    <filter id="blur18" x="-10%" y="-10%" width="120%" height="120%">
+      <feGaussianBlur stdDeviation="18"/>
+    </filter>
+  </defs>
+
+  <!-- top-left broad soft wave -->
+  <path d="M-170 0
+           C120 20 210 120 365 145
+           C495 167 585 98 690 26
+           L690 0 Z"
+        fill="url(#lavenderFadeA)"/>
+
+  <!-- secondary top-left wave -->
+  <path d="M-120 0
+           C110 8 185 84 312 107
+           C407 125 476 87 559 27
+           L559 0 Z"
+        fill="url(#lavenderFadeC)"/>
+
+  <!-- top-right crossing lights -->
+  <path d="M1485 70
+           C1634 41 1817 84 1920 147
+           L1920 336
+           C1837 275 1729 232 1602 221
+           C1540 214 1489 198 1447 172
+           C1474 136 1490 103 1485 70 Z"
+        fill="url(#lavenderFadeD)"/>
+
+  <path d="M1566 132
+           C1688 111 1812 143 1920 223
+           L1920 353
+           C1818 279 1726 247 1624 241
+           C1560 237 1507 217 1470 191
+           C1512 172 1541 153 1566 132 Z"
+        fill="url(#lavenderFadeB)" filter="url(#blur18)"/>
+
+  <!-- subtle lower-right soft wave -->
+  <path d="M1160 515
+           C1360 454 1635 463 1920 598
+           L1920 650
+           L1080 650
+           C1134 603 1154 559 1160 515 Z"
+        fill="url(#lavenderFadeB)" filter="url(#blur24)"/>
+
+  <!-- mid-lower horizontal light ribbon -->
+  <path d="M0 602
+           C218 569 421 585 610 603
+           C759 617 877 635 1040 615
+           C1200 595 1318 562 1450 571
+           C1590 580 1745 633 1920 650
+           L0 650 Z"
+        fill="url(#lavenderFadeC)"/>
+</svg>

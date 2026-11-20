@@ -1,12 +1,18 @@
-@use '../abstracts/abstracts'
+@use '../abstracts/variables'
 @use 'sass:color'
 
-.l-title
+.title
+    position: relative
+    display: flex
+    gap: 0.8rem
+    align-items: start 
+    flex-direction: column
+    justify-content: start 
     span 
         font-size: 1rem
         font-weight: bold
         border-radius: 50rem 
         padding: 0.3rem 1rem 
-        color: abstracts.$secondary-color
-        border: abstracts.$secondary-color 2px solid
-        background-color: rgba(color.adjust( abstracts.$secondary-color, $lightness: 15% ), 0.1)
+        color: variables.$purple
+        border: variables.$purple 2px solid
+        background-color: rgba(color.adjust( variables.$purple, $lightness: 15% ), 0.1)
